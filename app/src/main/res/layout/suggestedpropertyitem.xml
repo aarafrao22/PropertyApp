@@ -14,6 +14,7 @@
         android:layout_height="100dp"
         android:background="@drawable/suggestedpropertybg"
         android:src="@mipmap/ic_launcher"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintCircleRadius="23dp"
         app:layout_constraintStart_toStartOf="parent"

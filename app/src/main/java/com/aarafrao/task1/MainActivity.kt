@@ -12,10 +12,10 @@ class MainActivity : AppCompatActivity() {
 
 
         val items = ArrayList<SuggestedHomeModel>()
-        items.add(SuggestedHomeModel(this,"Rent","Abdullah Plaza Scheme 33\nShahrah e Faisal",R.mipmap.ic_launcher,3,4,220,19990))
-        items.add(SuggestedHomeModel(this,"Sale","Shakeel Corporation\nKarimabad",R.mipmap.ic_launcher,3,4,220,19990))
-        items.add(SuggestedHomeModel(this,"Rent","Hafeez Center\nSadar Karachi",R.mipmap.ic_launcher,3,4,220,19990))
-        items.add(SuggestedHomeModel(this,"Rent","Abdullah Plaza Scheme 33\nShahrah e Faisal",R.mipmap.ic_launcher,3,4,220,19990))
+        items.add(SuggestedHomeModel(this,"Rent","Abdullah Plaza Scheme 33\nShahrah e Faisal",R.drawable.img1,3,14,220,19990))
+        items.add(SuggestedHomeModel(this,"Sale","Shakeel Corporation\nKarimabad",R.drawable.img2,1,4,220,19990))
+        items.add(SuggestedHomeModel(this,"Rent","Hafeez Center\nSadar Karachi",R.drawable.img3,310,4,220,19990))
+        items.add(SuggestedHomeModel(this,"Rent","Abdullah Plaza Scheme 33\nShahrah e Faisal",R.drawable.img4,3,4,220,19990))
         val adapter: SuggestedHomeRVAdapter = SuggestedHomeRVAdapter(this,items)
         suggestedHomeRV.adapter = adapter
         suggestedHomeRV.layoutManager = LinearLayoutManager(this)
