@@ -1,11 +1,13 @@
 package com.aarafrao.task1
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 
 class SuggestedHomeRVAdapter(
@@ -27,7 +29,7 @@ class SuggestedHomeRVAdapter(
 
         fun setData(name: String?,
                     imageView: Int,
-                    propertyStatus:String,
+                    propertyStatus:String?,
                     bedroom:Int?,
                     bathroom:Int?,
                     squareFeet:Int?,
@@ -40,6 +42,18 @@ class SuggestedHomeRVAdapter(
             this.squareFeet.text = squareFeet.toString()
             this.price.text = price.toString()
             this.imageView.setImageResource(item[position].image)
+
+            itemView.setOnClickListener {
+                val intent = Intent(itemView.context, PropertyActivity::class.java)
+                intent.putExtra("name", name)
+                intent.putExtra("status", propertyStatus)
+                intent.putExtra("bedroom", bedroom)
+                intent.putExtra("bathroom", bathroom)
+                intent.putExtra("sqf", squareFeet)
+//                intent.putExtra("price", price)
+//                intent.putExtra("image",imageView)
+                itemView.context.startActivity(intent)
+            }
 
         }
     }
