@@ -36,7 +36,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:textSize="16dp"
-        android:textColor="@color/black"
         android:textStyle="bold"
         android:text="123 Street Star\nVilla A Block\98"
         app:layout_constraintStart_toEndOf="@+id/imgProperty"
@@ -49,6 +48,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="4dp"
+        android:gravity="center"
         app:layout_constraintStart_toStartOf="@+id/txtName"
         app:layout_constraintTop_toBottomOf="@+id/txtName">
 
@@ -67,7 +67,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="1"
-            android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="@+id/imageView2"
             app:layout_constraintStart_toEndOf="@+id/imageView2"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -88,7 +87,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="1"
-            android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="@+id/imageView2"
             app:layout_constraintStart_toEndOf="@+id/imageView2"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -110,7 +108,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="1"
-            android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="@+id/imageView2"
             app:layout_constraintStart_toEndOf="@+id/imageView2"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />

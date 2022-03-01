@@ -86,7 +86,6 @@
                 android:paddingTop="14dp"
                 android:paddingBottom="14dp"
                 android:text="Find the best \nchoice property"
-                android:textColor="@color/black"
                 android:textSize="24dp"
                 android:textStyle="bold" />
 
@@ -119,7 +118,6 @@
                         android:paddingTop="14dp"
                         android:paddingBottom="2dp"
                         android:text="Suggested Home"
-                        android:textColor="@color/black"
                         android:textSize="16dp"
                         android:textStyle="bold" />
 
@@ -127,16 +125,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="12 Property are on Albama"
-                        android:textColor="@color/black"
                         android:textSize="12dp" />
                 </LinearLayout>
 
                 <TextView
+                    android:id="@+id/seeAll"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="See All"
-                    android:textColor="@color/black"
                     android:textSize="12dp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"

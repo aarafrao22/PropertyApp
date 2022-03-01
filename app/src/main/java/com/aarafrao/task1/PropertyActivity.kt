@@ -17,8 +17,8 @@ class PropertyActivity : AppCompatActivity() {
         setContentView(R.layout.activity_property)
         imageView.setImageResource(R.drawable.img1)
         BottomSheetBehavior.from(sheet).apply {
-            peekHeight = 400
-            this.state = BottomSheetBehavior.STATE_HALF_EXPANDED
+            peekHeight = 200
+            this.state = BottomSheetBehavior.STATE_COLLAPSED
         }
 
         status.text = intent.getStringExtra("status")
