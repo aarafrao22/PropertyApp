@@ -27,6 +27,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, DetailsActivity::class.java)
             startActivity(intent)
         }
+        txtChoose.setOnClickListener {
+            val intent1 = Intent(this, MapsActivity::class.java)
+            startActivity(intent1)
+        }
 
     }
 }
