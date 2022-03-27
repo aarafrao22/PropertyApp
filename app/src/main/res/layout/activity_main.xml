@@ -91,14 +91,15 @@
                 android:layout_height="wrap_content"
                 android:paddingTop="14dp"
                 android:paddingBottom="14dp"
-                android:text="Find the best \nchoice property"
-                android:textSize="24dp"
+                android:text="Find the best\nchoice property"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:maxLines="1"
                 android:inputType="text"
                 android:background="@drawable/searchbg"
                 android:elevation="2dp"
@@ -153,17 +154,13 @@
                 android:id="@+id/suggestedHomeRV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"></androidx.recyclerview.widget.RecyclerView>
+                tools:listitem="@layout/suggestedpropertyitem"
+                android:layout_marginTop="12dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
 
         </LinearLayout>
 
     </ScrollView>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/menu"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

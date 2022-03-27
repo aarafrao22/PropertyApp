@@ -59,8 +59,9 @@
         <FrameLayout
             android:id="@+id/sheet"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="400dp"
             android:background="@drawable/bottomsheet"
+            android:layout_marginBottom="12dp"
             app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
             app:layout_constraintBottom_toBottomOf="parent">
 
